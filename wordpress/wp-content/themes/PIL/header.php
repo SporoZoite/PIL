@@ -97,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_class'      => 'left-navbar-nav',
 						'fallback_cb'     => '',
 						'depth'           => 2,
-						'menu'            => 5,
+						'menu'            => 3,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				);
