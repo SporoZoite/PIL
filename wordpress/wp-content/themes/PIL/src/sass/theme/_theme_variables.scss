@@ -7,8 +7,11 @@
 $primary: #FFC33B;  // Once we've changed the value, we'll also make it the primary brand color.
 @font-face {
     font-family: 'IIVorkursLight';
-    src: url('/fonts/IIVorkursLight.woff2') format('woff2'),
-        url('/fonts/IIVorkursLight.woff') format('woff');
+	src: url('.../.../.../fonts/IIVorkursLight.eot');
+    src: url('.../.../.../fonts/IIVorkursLight.eot?#iefix') format('embedded-opentype'),
+	    url('.../.../.../fonts/IIVorkursLight.woff2') format('woff2'),
+        url('.../.../.../fonts/IIVorkursLight.woff') format('woff'),
+		url('.../.../.../fonts/IIVorkursLight.svg#IIVorkursLight') format('svg');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -16,8 +19,11 @@ $primary: #FFC33B;  // Once we've changed the value, we'll also make it the prim
 
 @font-face {
     font-family: 'IIVorkursMedium';
-    src: url('/fonts/IIVorkursMedium.woff2') format('woff2'),
-        url('/fonts/IIVorkursMedium.woff') format('woff');
+	src: url('.../.../.../fonts/IIVorkursMedium.eot');
+    src: url('.../.../.../fonts/IIVorkursMedium.eot?#iefix') format('embedded-opentype'),
+         url('.../.../.../fonts/IIVorkursMedium.woff2') format('woff2'),
+        url('.../.../.../fonts/IIVorkursMedium.woff') format('woff'),
+		url('.../.../.../fonts/IIVorkursMedium.svg#IIVorkursMedium') format('svg');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -25,8 +31,11 @@ $primary: #FFC33B;  // Once we've changed the value, we'll also make it the prim
 
 @font-face {
     font-family: 'IIVorkursBold';
-    src: url('/fonts/IIVorkursBold.woff2') format('woff2'),
-        url('/fonts/IIVorkursBold.woff') format('woff');
+	src: url('.../.../.../fonts/IIVorkursBold.eot');
+    src: url('.../.../.../fonts/IIVorkursBold.eot?#iefix') format('embedded-opentype'),
+         url('.../.../.../fonts/IIVorkursBold.woff2') format('woff2'),
+        url('.../.../.../fonts/IIVorkursBold.woff') format('woff'),
+		url('.../.../.../fonts/IIVorkursBold.svg#IIVorkursBold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
