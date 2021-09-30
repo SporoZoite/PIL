@@ -192,12 +192,14 @@ Wallimage Entreprises
 Wallonie Image Production
 Waooh!
 Wasabi
-Mikros 
+Mikros
 </div>
 
 </div>
 
 </div>
+
+<div id="home-divider"></div>
 
 <?php
 get_footer();

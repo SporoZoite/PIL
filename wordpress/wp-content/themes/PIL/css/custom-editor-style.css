@@ -164,12 +164,12 @@ sup {
 }
 
 a {
-  color: #FFC33B;
+  color: #171717;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #eea500;
+  color: black;
   text-decoration: underline;
 }
 
@@ -750,32 +750,32 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 5.65rem;
 }
 @media (max-width: 1200px) {
   h1, .h1 {
-    font-size: -webkit-calc(1.375rem + 1.5vw);
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: -webkit-calc(1.69rem + 5.28vw);
+    font-size: calc(1.69rem + 5.28vw);
   }
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 3.125rem;
 }
 @media (max-width: 1200px) {
   h2, .h2 {
-    font-size: -webkit-calc(1.325rem + 0.9vw);
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: -webkit-calc(1.4375rem + 2.25vw);
+    font-size: calc(1.4375rem + 2.25vw);
   }
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
+  font-size: 2.125rem;
 }
 @media (max-width: 1200px) {
   h3, .h3 {
-    font-size: -webkit-calc(1.3rem + 0.6vw);
-    font-size: calc(1.3rem + 0.6vw);
+    font-size: -webkit-calc(1.3375rem + 1.05vw);
+    font-size: calc(1.3375rem + 1.05vw);
   }
 }
 
@@ -1236,7 +1236,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 
 .editor-post-title .editor-post-title__input {
-  font-size: 2.5rem;
+  font-size: 5.65rem;
   font-weight: 500;
 }
 

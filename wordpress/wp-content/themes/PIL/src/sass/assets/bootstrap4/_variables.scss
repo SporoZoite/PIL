@@ -173,7 +173,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              theme-color("secondary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
@@ -292,9 +292,9 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
+$h1-font-size:                $font-size-base * 5.65 !default;
+$h2-font-size:                $font-size-base * 3.125 !default;
+$h3-font-size:                $font-size-base * 2.125 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
