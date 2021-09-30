@@ -16478,23 +16478,6 @@ body {
   font-size: 20px;
 }
 
-#home-first-part {
-  color: #ffffff;
-  background-color: #171717;
-  min-height: 3240px;
-}
-
-#home-formations {
-  top: 3239px;
-  left: 0px;
-  min-height: 1090px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-}
-
-#home-entreprises {
-  min-height: 497px;
-}
-
 #wrapper-footer {
   min-height: 360px;
   margin: 6px;
@@ -16546,6 +16529,23 @@ body {
 }
 #wrapper-footer .row {
   margin: 0;
+}
+
+#home-first-part {
+  color: #ffffff;
+  background-color: #171717;
+  min-height: 3240px;
+}
+
+#home-formations {
+  top: 3239px;
+  left: 0px;
+  min-height: 1090px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+#home-entreprises {
+  min-height: 497px;
 }
 
 /*# sourceMappingURL=theme.css.map */
