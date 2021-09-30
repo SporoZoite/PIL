@@ -155,11 +155,23 @@ body {
 	margin:6px;
 	padding:0;
 
-	.row {
+	#footer-row {
        min-height:383px;
 	}
 
 	.col {
-		height: 100%;
+		min-height: 383px;
+	}
+
+	#footer-first-part{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+
+	#footer-heading{
+		display: flex;
+		align-items: center;
+		justify-content: left;
 	}
 }
