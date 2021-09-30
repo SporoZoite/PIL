@@ -1,3 +1,65 @@
 
 
 
+$primary: #FFC33B;  // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: #171717;
+$secondary-900: #212121;
+$secondary-600: #4b4b4b;
+$secondary-300: #707070;
+$white: #ffffff;
+
+@font-face {
+    font-family: 'IIVorkursLight';
+	src: url('../fonts/IIVorkursLight.eot');
+    src: url('../fonts/IIVorkursLight.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/IIVorkursLight.woff2') format('woff2'),
+        url('../fonts/IIVorkursLight.woff') format('woff'),
+		url('../fonts/IIVorkursLight.svg#IIVorkursLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IIVorkursMedium';
+	src: url('../fonts/IIVorkursMedium.eot');
+    src: url('../fonts/IIVorkursMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IIVorkursMedium.woff2') format('woff2'),
+        url('../fonts/IIVorkursMedium.woff') format('woff'),
+		url('../fonts/IIVorkursMedium.svg#IIVorkursMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IIVorkursBold';
+	src: url('../fonts/IIVorkursBold.eot');
+    src: url('../fonts/IIVorkursBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IIVorkursBold.woff2') format('woff2'),
+        url('../fonts/IIVorkursBold.woff') format('woff'),
+		url('../fonts/IIVorkursBold.svg#IIVorkursBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.custom-cursor {
+	position: fixed;
+	opacity: 0;
+	pointer-events: none;
+	mix-blend-mode: difference;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	transition: transform 350ms ease;
+	transform: translate(-50%, -50%) scale(.3);
+	z-index: 1000;
+  }
+  .custom-cursor--link {
+	transform: translate(-50%, -50%) scale(1);
+  }
+
+
+

@@ -1,9 +1,5 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-$secondary: #171717;
-$secondary-900: #212121;
-$secondary-600: #4b4b4b;
-$secondary-300: #707070;
-$white: #ffffff;
+
 
 
 
@@ -23,6 +19,7 @@ body {
 	width: 100%;
 	height: 100%;
 	position: fixed;
+	z-index:2;
 }
 
 #wrapper-navbar {
@@ -110,7 +107,7 @@ body {
 .left-nav {
 	width: 127px;
 	height: 100%;
-	border: 1px solid #4b4b4b;
+	border: 1px solid $secondary-600;
 }
 
 .social-networks-container{
@@ -150,7 +147,7 @@ body {
 	top: 3239px;
 	left: 0px;
 	min-height: 1090px;
-	background: #ffffff 0% 0% no-repeat padding-box;
+	background: $white 0% 0% no-repeat padding-box;
 }
 
 #home-entreprises {
