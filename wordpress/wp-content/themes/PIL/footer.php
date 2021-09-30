@@ -15,8 +15,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-<div class="wrapper" id="wrapper-footer">
-<div class="container-fluid" id="container-footer">
+<div class="container-fluid" id="wrapper-footer">
+
 
 <div class="row">
 <div class="col"></div>
