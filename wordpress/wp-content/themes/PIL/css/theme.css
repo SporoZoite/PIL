@@ -16242,7 +16242,6 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 4.688rem;
 }
 .social-networks-container ul {
   list-style-type: none;
@@ -16253,6 +16252,12 @@ body {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
   padding-inline-start: 0;
+}
+.social-networks-container .left-navbar-nav {
+  padding-bottom: 4.694rem;
+}
+.social-networks-container .left-navbar-nav .nav-item {
+  text-align: center;
 }
 .social-networks-container .left-navbar-nav .nav-item .nav-link {
   font-family: "IIVorkursMedium";
@@ -16281,6 +16286,14 @@ body {
 
 #wrapper-footer {
   min-height: 383px;
+  margin: 6px;
+  padding: 0;
+}
+#wrapper-footer .row {
+  min-height: 383px;
+}
+#wrapper-footer .col {
+  height: 100%;
 }
 
 /*# sourceMappingURL=theme.css.map */
