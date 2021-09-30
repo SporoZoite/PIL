@@ -16227,7 +16227,7 @@ body {
 
 .left-nav {
   width: 127px;
-  height: 100%;
+  height: 100vh;
   border: 1px solid #4b4b4b;
 }
 
@@ -16235,13 +16235,14 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 100vh;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-bottom: 4rem;
 }
 .social-networks-container ul {
   list-style-type: none;
@@ -16254,10 +16255,12 @@ body {
   padding-inline-start: 0;
 }
 .social-networks-container .left-navbar-nav {
-  padding-bottom: 4.694rem;
+  padding-bottom: 0.625rem;
 }
 .social-networks-container .left-navbar-nav .nav-item {
   text-align: center;
+  padding-top: 1.906rem;
+  padding-bottom: 1.906rem;
 }
 .social-networks-container .left-navbar-nav .nav-item .nav-link {
   font-family: "IIVorkursMedium";

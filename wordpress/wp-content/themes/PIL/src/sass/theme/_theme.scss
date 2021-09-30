@@ -101,15 +101,16 @@ body {
 
 .left-nav {
 	width: 127px;
-	height: 100%;
+	height: 100vh;
 	border: 1px solid $secondary-600;
 }
 
 .social-networks-container {
 	display: flex;
-	height: 100%;
+	height: 100vh;
 	justify-content: flex-end;
 	flex-direction: column;
+	padding-bottom: 4rem;
 	ul {
 		list-style-type: none;
 		margin-block-start: 0;
@@ -117,9 +118,11 @@ body {
 		padding-inline-start: 0;
 	}
 	.left-navbar-nav {
-		padding-bottom: 4.694rem ;
+		padding-bottom: 0.625rem ;
 		.nav-item {
 			text-align: center;
+			padding-top: 1.906rem;
+			padding-bottom:1.906rem;
 			.nav-link {
 				font-family: "IIVorkursMedium";
 				letter-spacing: 0px;
