@@ -151,27 +151,46 @@ body {
 }
 
 #wrapper-footer {
-	min-height: 383px;
+	min-height: 360px;
 	margin:6px;
 	padding:0;
 
 	#footer-row {
-       min-height:383px;
+       min-height:360px;
 	}
 
 	.col {
-		min-height: 383px;
+		min-height: 360px;
 	}
 
 	#footer-first-part{
+		margin:0;
 		display:flex;
 		flex-direction:column;
 		justify-content:space-between;
+		#footer-adress{
+		font-family: "IIVorkursLight";
+		font-size: 15px;
+        margin-bottom:1.398rem;
+		}
 	}
 
-	#footer-heading{
-		display: flex;
+	#footer-phone-part{
+		margin:0;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
 		align-items: center;
-		justify-content: left;
+		.footer-phone{
+			font-size: 15px;
+			padding: 103px 50px;
+			border: 1px solid $white;
+			border-radius: 50%;
+		}
+	}
+
+
+	.row{
+		margin:0;
 	}
 }

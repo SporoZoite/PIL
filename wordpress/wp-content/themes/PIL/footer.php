@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div>
 </div>
 
-<div class="col">
+<div class="col" id="footer-phone-part">
   <div class="footer-phone">
     +32 4 239 69 01
   </div>
