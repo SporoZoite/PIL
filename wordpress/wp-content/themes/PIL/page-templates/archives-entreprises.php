@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Archive Entreprises
+ * Template Name: les entreprises
  *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package Understrap
  */
@@ -11,44 +11,61 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'understrap_container_type' );
 
-if ( is_front_page() ) {
-	get_template_part( 'global-templates/hero' );
-}
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper" id="archive-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
-			<div class="col-md-12 content-area" id="primary">
+			<!-- Do the left sidebar check -->
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-				<main class="site-main" id="main" role="main">
+			<main class="site-main" id="main">
 
+				<?php
+				if ( have_posts() ) {
+					?>
+					<header class="page-header">
+						<?php
+						the_archive_title( '<h1 class="page-title">', '</h1>' );
+						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
+					</header><!-- .page-header -->
 					<?php
+					// Start the loop.
 					while ( have_posts() ) {
 						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'loop-templates/content', get_post_format() );
 					}
-					?>
+				} else {
+					get_template_part( 'loop-templates/content', 'none' );
+				}
+				?>
 
-				</main><!-- #main -->
+			</main><!-- #main -->
 
-			</div><!-- #primary -->
+			<?php
+			// Display the pagination component.
+			understrap_pagination();
+			// Do the right sidebar check.
+			get_template_part( 'global-templates/right-sidebar-check' );
+			?>
 
-		</div><!-- .row end -->
+		</div><!-- .row -->
 
 	</div><!-- #content -->
 
-</div><!-- #full-width-page-wrapper -->
+</div><!-- #archive-wrapper -->
 
 <?php
 get_footer();

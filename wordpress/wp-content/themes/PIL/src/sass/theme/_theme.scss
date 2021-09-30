@@ -5,6 +5,8 @@ $secondary-600: #4b4b4b;
 $secondary-300: #707070;
 $white: #ffffff;
 
+
+
 body {
 	color: $white;
 	background-color: $secondary;
@@ -114,7 +116,7 @@ body {
 .social-networks-container{
 	display: flex;
 	height: 100%;
-	justify-content: end;
+	justify-content: flex-end;
 	flex-direction: column;
 	padding-bottom:4.688rem ;
 	ul{

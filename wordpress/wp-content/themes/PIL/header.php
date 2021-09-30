@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<ul id="menu-contact" class="navbar-nav ml-auto">
 				<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item">
 						Contact
-						<a id="contact-button" title="Contact" href="#" class="nav-link">
+						<a id="contact-button" title="Contact" href="/contact/" class="nav-link">
 						<img id='arrow-contact' src="<?php echo get_template_directory_uri(); ?>/img/arrow-conctact.svg" alt="arrow">
 						</a>
 			</li>
@@ -97,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_class'      => 'left-navbar-nav',
 						'fallback_cb'     => '',
 						'depth'           => 2,
-						'menu'            => 5,
+						'menu'            => 3,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				);
