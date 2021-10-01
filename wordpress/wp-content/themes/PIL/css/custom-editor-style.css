@@ -32,17 +32,12 @@
   height: 50px;
   border-radius: 50%;
   background-color: white;
-  -webkit-transition: -webkit-transform 350ms ease;
-  transition: -webkit-transform 350ms ease;
   transition: transform 350ms ease;
-  transition: transform 350ms ease, -webkit-transform 350ms ease;
-  -webkit-transform: translate(-50%, -50%) scale(0.3);
   transform: translate(-50%, -50%) scale(0.3);
   z-index: 1000;
 }
 
 .custom-cursor--link {
-  -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
 }
 
