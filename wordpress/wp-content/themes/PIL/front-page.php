@@ -15,8 +15,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div id="home-first-part">
-<h1 id="home-titre">Espaces pour
-industries créatives</h1>
+
+<h1 id="home-titre"><?php the_field('home-page-title'); ?></h1>
 
 <div id="arrow-down">
 	<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.svg" alt="arrow-down">
