@@ -154,6 +154,7 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 <div class="row" id="home-entreprises-list-container">
 
 <div class="col" id="home-entreprises-list-col-1">
+	<ul>
 ACA
 Aftertouch
 Barco
@@ -161,6 +162,7 @@ Cluster TWIST
 Cynaptek
 D6D Design Studio
 Defimedia
+</ul>
 </div>
 
 <div class="col" id="home-entreprises-list-col-2">
