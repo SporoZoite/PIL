@@ -1,4 +1,9 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body {
 	color: $white;
@@ -10,27 +15,28 @@ body {
 		max-width: 768px;
 		max-height: 1024px;
 	}
-	.row{
-		margin:0;
+	.row {
+		margin: 0;
 	}
 }
 
 #header {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
+	overflow: hidden;
+	mix-blend-mode: difference !important;
 	z-index: 2;
 }
 
 #wrapper-navbar {
-	min-height: 125px;
+	height: 125px;
 	width: 100%;
 	border: 1px solid $secondary-600;
 	font-family: "IIVorkursMedium";
-	font-size: 20px;
+	font-size: 125%;
 	color: $white;
 	position: absolute;
-
 	#main-nav {
 		padding: 0;
 
@@ -65,10 +71,10 @@ body {
 			.navbar-nav {
 				.nav-item {
 					.nav-link {
-						font-family: "IIVorkursMedium";
 						letter-spacing: 0px;
 						color: $white;
 						padding: 1.563rem;
+						z-index: 1000;
 					}
 				}
 			}
@@ -76,7 +82,7 @@ body {
 
 		.header-logo-container {
 			width: 125px;
-			height: 125px;
+			height: 123px;
 			background-color: $white;
 			padding: 24px;
 		}
@@ -113,7 +119,7 @@ body {
 	height: 100vh;
 	justify-content: flex-end;
 	flex-direction: column;
-	padding-bottom: 4rem;
+	padding-bottom: 3rem;
 	ul {
 		list-style-type: none;
 		margin-block-start: 0;
@@ -152,7 +158,6 @@ body {
 		}
 	}
 
-
 	#footer-row {
 		margin-left: 16.375rem;
 		margin-right: 16.375rem;
@@ -164,7 +169,7 @@ body {
 
 		#footer-first-part {
 			margin: 0;
-			padding-top:58px;
+			padding-top: 58px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -220,7 +225,7 @@ body {
 			justify-content: space-between;
 			font-size: 20px;
 			#nav-footer {
-				padding-top:58px;
+				padding-top: 58px;
 				justify-content: left;
 				ul {
 					margin-block-start: 0;
