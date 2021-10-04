@@ -119,6 +119,7 @@ body {
 	height: 100vh;
 	border: 1px solid $secondary-600;
 	position:fixed;
+	mix-blend-mode: difference !important;
 }
 
 .social-networks-container {
