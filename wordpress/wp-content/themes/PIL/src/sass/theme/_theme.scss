@@ -10,6 +10,9 @@ body {
 		max-width: 768px;
 		max-height: 1024px;
 	}
+	.row{
+		margin:0;
+	}
 }
 
 #header {
@@ -121,7 +124,7 @@ body {
 		.nav-item {
 			text-align: center;
 			padding-top: 1.906rem;
-			padding-bottom:1.906rem;
+			padding-bottom: 1.906rem;
 			.nav-link {
 				font-family: "IIVorkursMedium";
 				letter-spacing: 0px;
@@ -133,48 +136,133 @@ body {
 	}
 }
 
-
 #wrapper-footer {
 	min-height: 360px;
-	margin:6px;
-	padding:0;
+	padding: 0;
+	color: $white;
+
+	.footer-horizontal-divider {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.footer-horizontal-line {
+			display: inline-block;
+			border-top: 1px solid #656565;
+			width: 1396px;
+		}
+	}
+
 
 	#footer-row {
-       min-height:360px;
-	}
-
-	.col {
+		margin-left: 16.375rem;
+		margin-right: 16.375rem;
 		min-height: 360px;
-	}
-
-	#footer-first-part{
-		margin:0;
-		display:flex;
-		flex-direction:column;
-		justify-content:space-between;
-		#footer-adress{
-		font-family: "IIVorkursLight";
-		font-size: 15px;
-        margin-bottom:1.398rem;
+		.col {
+			min-height: 360px;
+			padding: 0;
 		}
-	}
 
-	#footer-phone-part{
-		margin:0;
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items: center;
-		.footer-phone{
-			font-size: 15px;
-			padding: 103px 50px;
-			border: 1px solid $white;
-			border-radius: 50%;
+		#footer-first-part {
+			margin: 0;
+			padding-top:58px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-size: 20px;
+			#footer-adress {
+				display: flex;
+				flex-direction: column;
+				font-family: "IIVorkursLight";
+				font-size: 15px;
+				margin-bottom: 1.398rem;
+			}
 		}
-	}
 
+		#footer-phone-part {
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 223px;
+			.footer-circle {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 223px;
+				width: 223px;
+				border: 1px solid #656565;
+				background-color: none;
+				border-radius: 50%;
+				margin-bottom: 2rem;
+				.footer-phone {
+					font-size: 15px;
+					color: $white;
+				}
+			}
+		}
 
-	.row{
-		margin:0;
+		#footer-vertical-divider {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.footer-vertical-line {
+				display: inline-block;
+				border-left: 1px solid #656565;
+				height: 383px;
+			}
+		}
+
+		#nav-footer-col {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-size: 20px;
+			#nav-footer {
+				padding-top:58px;
+				justify-content: left;
+				ul {
+					margin-block-start: 0;
+					margin-block-end: 0;
+					padding-inline-start: 0;
+					list-style-type: none;
+					li {
+						margin-bottom: 24px;
+						a {
+							color: $white;
+							padding: 0;
+						}
+					}
+				}
+			}
+			#nav-c {
+				font-family: "IIVorkursLight";
+				font-size: 15px;
+				margin-bottom: 1.398rem;
+				color: #656565;
+			}
+		}
+
+		#footer-infos {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-end;
+			margin-bottom: 1.398rem;
+			#footer-infos-container {
+				.footer-info {
+					font-family: "IIVorkursLight";
+					font-size: 15px;
+					margin: 0;
+					margin-block-start: 0;
+					margin-block-end: 0;
+					color: #656565;
+					strong {
+						color: $white;
+					}
+				}
+			}
+		}
 	}
 }
