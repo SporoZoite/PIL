@@ -105,7 +105,12 @@ body {
 #arrow-contact {
 	padding: 19px 16px;
 	border: 1px solid $white;
+	background-color: $secondary;
 	border-radius: 50%;
+}
+
+#contact-button:hover{
+	filter: invert(1);
 }
 
 .left-nav {
