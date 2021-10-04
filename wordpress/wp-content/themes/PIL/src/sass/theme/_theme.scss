@@ -22,7 +22,7 @@ body {
 
 #header {
 	width: 100vw;
-	height: 100vh;
+	height: 125px;
 	position: fixed;
 	overflow: hidden;
 	mix-blend-mode: difference !important;
@@ -118,6 +118,7 @@ body {
 	width: 127px;
 	height: 100vh;
 	border: 1px solid $secondary-600;
+	position:fixed;
 }
 
 .social-networks-container {
