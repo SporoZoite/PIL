@@ -21,18 +21,41 @@
 		flex-direction: row;
 		justify-content: space-between;
 		.home-card {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: left;
 			width: 13.5rem;
 			height: 20.688rem;
-			background-color:#212121;
-			.home-card-picto{
-				margin: 2rem 1rem;
+			background-color: #212121;
+			#picto-rounds{
+				margin: 2rem 1.625rem ;
 			}
-			
+			.home-card-img {
+				margin: 2.5rem 1.625rem ;
+				.home-card-picto {
+				height:90%;
+				}
+			}
+			.home-card-text {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 1.1rem;
+				margin-left: 1.625rem;
+				.home-card-title {
+					color: $white;
+					font-size: 24px;
+				}
+				.home-card-number {
+					color: $primary;
+					font-size: 15px;
+				}
+			}
 		}
-		.home-btn-card{
+		.home-btn-card {
 			width: 13.5rem;
 			height: 20.688rem;
-			background-color:#212121;
+			background-color: #212121;
 		}
 	}
 }
