@@ -1,17 +1,15 @@
 #home-first-part {
 	color: $white;
 	background-color: $secondary;
-	min-height: 3240px;
+	height: 3240px;
 	#home-big-ellipse-container {
 		position: relative;
-			left: 926px;
-			top: 1764.401px;
-			overflow:hidden;
-			width: 66.65rem;
-			height: 126.07rem;
+		left: 926px;
+		top: 1764.401px;
+		overflow: hidden;
+		width: 62rem;
+		height: 126.07rem;
 		#home-big-ellipse {
-			left: 926px;
-			top: 1764.401px;
 			width: 133.01rem;
 			height: 126.07rem;
 			.home-big-ellipse-picto {
@@ -25,10 +23,10 @@
 #home-formations {
 	top: 3239px;
 	left: 0px;
-	min-height: 1090px;
+	height: 1090px;
 	background: $white 0% 0% no-repeat padding-box;
 }
 
 #home-entreprises {
-	min-height: 497px;
+	height: 497px;
 }
