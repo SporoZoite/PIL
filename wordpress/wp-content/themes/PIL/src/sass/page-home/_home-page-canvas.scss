@@ -2,10 +2,27 @@
 	color: $white;
 	background-color: $secondary;
 	height: 3240px;
+	#home-big-circle-container {
+		position: absolute;
+		left: -444.62px;
+		top: 1837.83px;
+		overflow: hidden;
+		height: 55.578rem;
+		width: 55.578rem;
+		.home-big-circle {
+			height: 55.578rem;
+			width: 55.578rem;
+			border:1px solid #4b4b4b;
+			border-radius: 50%;
+			background:rgba(0,0,0,0);
+			line-height:55.578rem;
+		}
+	}
+
 	#home-big-ellipse-container {
-		position: relative;
+		position: absolute;
 		left: 926px;
-		top: 1325px;
+		top: 1764px;
 		overflow: hidden;
 		width: 62rem;
 		height: 126.07rem;
