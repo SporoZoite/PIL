@@ -28,13 +28,13 @@
 			width: 13.5rem;
 			height: 20.688rem;
 			background-color: #212121;
-			#picto-rounds{
-				margin: 2rem 1.625rem ;
+			#picto-rounds {
+				margin: 2rem 1.625rem;
 			}
 			.home-card-img {
-				margin: 2.5rem 1.625rem ;
+				margin: 2.5rem 1.625rem;
 				.home-card-picto {
-				height:90%;
+					height: 90%;
 				}
 			}
 			.home-card-text {
@@ -55,7 +55,26 @@
 		.home-btn-card {
 			width: 13.5rem;
 			height: 20.688rem;
-			background-color: #212121;
+			border: 1px solid #4b4b4b;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			#home-btn-card-btn{
+				background-color: transparent;
+				font-size: 18px;
+				border:none;
+				height:7.068rem;
+				width:7.5rem;
+				.home-btn-card-picto{
+					color:#4b4b4b;
+					margin-bottom: 1.5rem;
+				}
+				.home-btn-card-text{
+					color:$white;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }
