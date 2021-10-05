@@ -1,0 +1,38 @@
+#home-sectors {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	width: 87.25rem;
+	height: 39.718rem;
+	left: 262px;
+	top: 2271.884px;
+	#home-sectors-title-yellow {
+		color: $primary;
+	}
+	#home-sectors-subtitle {
+		color: #707070;
+		font-size: 24px;
+		font-family: "IIVorkursLight";
+		margin-bottom: 3.625rem;
+	}
+	.home-cards-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.home-card {
+			width: 13.5rem;
+			height: 20.688rem;
+			background-color:#212121;
+			.home-card-picto{
+				margin: 2rem 1rem;
+			}
+			
+		}
+		.home-btn-card{
+			width: 13.5rem;
+			height: 20.688rem;
+			background-color:#212121;
+		}
+	}
+}
