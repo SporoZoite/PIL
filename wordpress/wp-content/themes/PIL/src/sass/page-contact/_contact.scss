@@ -36,6 +36,7 @@
 						background-color: transparent;
 						border-color: white;
 						border-width: 1px;
+						border-style:solid;
 						color: white;
 						width: 9.544rem;
 						height: 2.875rem;
@@ -75,7 +76,17 @@
 				.contact-map {
 					height: 39.375rem;
 					width: 82.75rem;
+					overflow: hidden;
+					iframe{
+						filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(314deg) brightness(100%) contrast(100%);
+					}
 					#contact-big-pointer {
+						position: absolute;
+						width: 4.458rem;
+						height: 5.911rem;
+						left: 630.66px;
+						top: 611.761px;
+						overflow: visible;
 					}
 				}
 			}
@@ -94,5 +105,19 @@
 				height: 62.877rem;
 			}
 		}
+	}
+}
+
+
+.contact-horizontal-divider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:-1px;
+	.contact-horizontal-line {
+		display: inline-block;
+		border-top: 1px solid #656565;
+		width: 1920px;
+
 	}
 }
