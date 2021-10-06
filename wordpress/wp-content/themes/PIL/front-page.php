@@ -7,6 +7,13 @@
  * @package Understrap
  */
 
+
+// EMBED A VIDEO
+
+$embed = get_field('embed_a_video');
+// var_dump($embed);
+
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -18,6 +25,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <h1 id="home-titre"><?php the_field('home-page-title'); ?></h1>
 
+<?= $embed; ?>
+
 <div id="arrow-down">
 	<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.svg" alt="arrow-down">
 </div>
@@ -26,6 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div>
 
 <div class="home-image-container" id="home-image-container">
+	<!-- <?php echo $embed; ?> -->
     <img src="#" class="img-fluid" alt="Responsive home-image">
        <div class="btn-container" id="home-video-btn-container">
 	    <button class="btn" id="home-video-btn">
@@ -69,6 +79,7 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 <img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
 <p id="home-scrolling-text">30+ entreprises / 400+ personnes / 35+</p>
 </div>
+
 
 <h1 id="home-titre-2">Vous avez un projet </h1>
 <h1 id="home-titre-2-yellow">audiovisuel ou digital?</h1>
@@ -119,6 +130,8 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 <img src="" id="home-formations-image">
 
 <div id="home-formations">
+
+
 
 <h1 id="home-formations-titre">Formations audiovisuel</h1>
 <p id="home-formations-subtitle">Vous souhaitez vous former à un métier ou une compétence en pénurie en Wallonie ?</p>
