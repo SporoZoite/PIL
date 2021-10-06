@@ -1,14 +1,13 @@
 #home-formations {
-	border: 2px solid red;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	// grid-template-rows: repeat(5, 1fr);
 	grid-template-rows: minmax(10px, auto);
 }
 #home-formations-image {
 	width: 60%;
 	grid-column: 1;
 	grid-row: 1/6;
+	margin: -155px 0 0 235px;
 }
 #home-formations-titre {
 	color: black;
@@ -19,17 +18,20 @@ p#home-formations-subtitle {
 	color: black;
 	grid-column: 2/3;
 	grid-row: 2/3;
+	margin: -38px 337px 0px 0px;
 }
 p#home-formations-text {
 	color: black;
 	grid-column: 2/3;
 	grid-row: 3/4;
+	margin: -162px 306px 0px 0px;
 }
 .home-formations-lists-container {
 	display: flex;
 	flex-direction: row;
 	grid-column: 2/3;
 	grid-row: 4/5;
+	margin: -166px 0 0 0;
 }
 #home-formations-list-ul-1 {
 	list-style: none;
@@ -44,10 +46,23 @@ p#home-formations-text {
 #home-formations-list-2 {
 	color: black;
 	list-style: none;
+	padding: 0px 0px 0px 45px;
+}
+.home-formation-list-plus {
+	margin: -6px 10px 0px 0px;
 }
 #home-formations-btn {
 	grid-column: 2/3;
 	grid-row: 5/6;
 	border-radius: 15px;
 	border: 1px solid black;
+}
+a.home-formations-btn {
+	color: #171717;
+	text-decoration: none;
+	background-color: transparent;
+	margin: -200px 0px 0px 0px;
+}
+#home-formations-add {
+	margin: -7px 10px 0px 0px;
 }

@@ -148,7 +148,7 @@ $container = get_theme_mod('understrap_container_type');
 	</div>
 
 
-	<a href="#">
+	<a href="#" class="home-formations-btn">
 		<button id="home-formations-btn">
 			Voir le site ACA
 			<img id="home-formations-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
