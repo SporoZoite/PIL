@@ -15,10 +15,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="container-fluid" id="wrapper-footer">
 
-<div class="row" id="footer-row">
-
-<div class="col">
+<div class="footer-horizontal-divider">
+<span class="footer-horizontal-line"></span>
 </div>
+
+<div class="row" id="footer-row">
 
 <div class="col" id="footer-first-part">
   <div class="row" id="footer-heading">
@@ -40,24 +41,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div>
 
 <div class="col" id="footer-phone-part">
+	<span class="footer-circle">
   <div class="footer-phone">
     +32 4 239 69 01
   </div>
+</span>
 </div>
 
-<div class="col">
+<div class="col" id="footer-vertical-divider">
+<span class="footer-vertical-line"></span>
 </div>
 
-<div class="col">
+<div class="col" id="nav-footer-col">
 	  <div id="nav-footer">
            <?php
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
 						'container'       => false,
-						'menu_class'      => 'navbar-nav',
+						'menu_class'      => 'nav-footer',
 						'fallback_cb'     => '',
 						'depth'           => 2,
+						'menu'            => 4,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				);
@@ -75,16 +80,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="col">
 </div>
 
-<div class="col">
+<div class="col" id="footer-infos">
+	<div id="footer-infos-container">
 	  <div id="design-by">
-	  Design by <strong>savoirfaire.digital</strong>
+	  <p class= "footer-info">Design by <strong>savoirfaire.digital</strong>
+			</p>
 	  </div>
 	  <div id="coding-by">
-	  Coding by  <strong>becode.org</strong>
+	  <p class="footer-info">Coding by  <strong>becode.org</strong>
+	  </p>
 	  </div>
-</div>
-
-<div class="col">
+	  </div>
 </div>
 
     </div>
@@ -92,6 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 </div><!-- wrapper end -->
+
 
 </div><!-- #page we need this extra closing tag here -->
 
