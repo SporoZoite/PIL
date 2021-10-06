@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="navbar-toggler-icon">
 					</span>
 				</button>
-				
+
 				<div id="navbarNavDropdown" class="collapse navbar-collapse justify-content-stretch">
 
 				<!-- The WordPress Menu goes here -->
@@ -87,6 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+	</div><!-- #header end -->
 
 	<div class="left-nav">
 		<div class="social-networks-container">
@@ -105,4 +106,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 				?>
 		</div>
 	</div>
-	</div>
+

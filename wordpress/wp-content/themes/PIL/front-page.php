@@ -64,14 +64,7 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 
 </div>
 
-<div id="home-cercle-1">
-</div>
 
-<div id="home-ellipse-verticale-1">
-</div>
-
-<div id="home-ellipse-horizontale-1">
-</div>
 
 <div id="home-scrolling-text-container">
 <img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
@@ -80,49 +73,81 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 <p id="home-scrolling-text">30+ entreprises / 400+ personnes / 35+</p>
 </div>
 
+<div id="home-big-circle-container">
+<div class="home-big-circle"></div>
+</div>
 
-<h1 id="home-titre-2">Vous avez un projet </h1>
-<h1 id="home-titre-2-yellow">audiovisuel ou digital?</h1>
-<p id="home-titre-2-subtitle">Une entreprise du Pôle peut vous aider!</p>
+<div id="home-big-ellipse-container">
+<div id="home-big-ellipse">
+<img class="home-big-ellipse-picto" src="<?php echo get_template_directory_uri(); ?>/img/ellipse.svg" alt="ellipse">
+</div>
+</div>
+
+
+<div id="home-sectors">
+<h1 id="home-sectors-title">Vous avez un projet </h1>
+<h1 id="home-sectors-title-yellow">audiovisuel ou digital?</h1>
+<p id="home-sectors-subtitle">Une entreprise du Pôle peut vous aider!</p>
 
 <div class="home-cards-container">
 
 	<div class="home-card">
+	<div class="home-card-img">
 	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/enveloppe.svg" alt="enveloppe">
+	</div>
+	<div class="home-card-text">
 	<h4 class="home-card-title">Image</h4>
 	<p class="home-card-number">(14)</p>
 	</div>
+	</div>
 
 	<div class="home-card">
+	<div class="home-card-img">
 	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/ellipses.svg" alt="ellipses">
+	</div>
+	<div class="home-card-text">
 	<h4 class="home-card-title">Ar/Vr</h4>
 	<p class="home-card-number">(5)</p>
 	</div>
+	</div>
 
 	<div class="home-card">
+	<div class="home-card-img">
 	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/son.svg" alt="son">
+	</div>
+	<div class="home-card-text">
 	<h4 class="home-card-title">Son</h4>
 	<p class="home-card-number">(8)</p>
 	</div>
-
-	<div class="home-card">
-	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/arrow-left.svg" alt="arrow-left">
-	<h4 class="home-card-title">Digital</h4>
-	<p class="home-card-number">(25)</p>
 	</div>
 
 	<div class="home-card">
-	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/circles.svg" alt="circles">
+	<div class="home-card-img">
+	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-right">
+	</div>
+	<div class="home-card-text">
 	<h4 class="home-card-title">Digital</h4>
 	<p class="home-card-number">(25)</p>
+	</div>
+	</div>
+
+	<div class="home-card">
+	<div class="home-card-img" id="picto-rounds">
+	<img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/circles.svg" alt="circles">
+	</div>
+	<div class="home-card-text">
+	<h4 class="home-card-title">Digital</h4>
+	<p class="home-card-number">(25)</p>
+	</div>
 	</div>
 
 	<div class="home-btn-card">
-		<button id="home-card-btn">
-	      <img class="home-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/arrow-left.svg" alt="arrow-left">
-	      <p class="home-card-number">(25)</p>
+		<button onclick="location.href = '/entreprises/';" id="home-btn-card-btn">
+	      <img class="home-btn-card-picto" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-right">
+	      <p class="home-btn-card-text">Voir toutes les entreprises</p>
 	    </button>
 	</div>
+</div>
 </div>
 
 </div> 	<!-- end first part div -->
@@ -167,54 +192,52 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 <div class="row" id="home-entreprises-list-container">
 
 <div class="col" id="home-entreprises-list-col-1">
-	<ul>
-ACA
-Aftertouch
-Barco
-Cluster TWIST
-Cynaptek
-D6D Design Studio
-Defimedia
-</ul>
+<li class="home-entreprise">ACA</li>
+<li class="home-entreprise">Aftertouch</li>
+<li class="home-entreprise">Barco</li>
+<li class="home-entreprise">Cluster TWIST</li>
+<li class="home-entreprise">Cynaptek</li>
+<li class="home-entreprise">D6D Design Studio</li>
+<li class="home-entreprise">Defimedia</li>
 </div>
 
 <div class="col" id="home-entreprises-list-col-2">
-Dérives
-Eye-Lite Corporation Group
-Gambit Financial Solutions
-Instele / Connect-on
-Le Clap!
-M.Constant Consulting Group
-Mikros
+<li class="home-entreprise">Dérives</li>
+<li class="home-entreprise">Eye-Lite Corporation Group</li>
+<li class="home-entreprise">Gambit Financial Solutions</li>
+<li class="home-entreprise">Instele / Connect-on</li>
+<li class="home-entreprise">Le Clap!</li>
+<li class="home-entreprise">M.Constant Consulting Group</li>
+<li class="home-entreprise">Mikros</li>
 
 </div>
 
 <div class="col" id="home-entreprises-list-col-3">
-Rayon9
-Sage
-Signal Flow
-SonicPil
-StudioMilo
-t-heater
-Tapptic
+<li class="home-entreprise">Rayon9</li>
+<li class="home-entreprise">Sage</li>
+<li class="home-entreprise">Signal Flow</li>
+<li class="home-entreprise">SonicPil</li>
+<li class="home-entreprise">StudioMilo</li>
+<li class="home-entreprise">t-heater</li>
+<li class="home-entreprise">Tapptic</li>
 
 </div>
 
 <div class="col" id="home-entreprises-list-col-4">
-Technifutur
-TSF.be
-Wallimage Entreprises
-Wallonie Image Production
-Waooh!
-Wasabi
-Mikros
+<li class="home-entreprise">Technifutur</li>
+<li class="home-entreprise">TSF.be</li>
+<li class="home-entreprise">Wallimage Entreprises</li>
+<li class="home-entreprise">Wallonie Image Production</li>
+<li class="home-entreprise">Waooh!</li>
+<li class="home-entreprise">Wasabi</li>
+<li class="home-entreprise">Mikros</li>
 </div>
 
 </div>
 
 </div>
 
-<div id="home-divider"></div>
+
 
 <?php
 get_footer();
