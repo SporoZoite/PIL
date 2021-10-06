@@ -12,43 +12,55 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
-
-if ( is_front_page() ) {
-	get_template_part( 'global-templates/hero' );
-}
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div id="contact-part">
+<div id="contact-container">
+<div class="row" id="contact-row">
+	<div class="col" id="contact-col-1" style="width: 29.5rem;
+    flex: 0 0 29.5rem;max-width: 29.5rem;">
+      <h2 class= "contact-title">Contact</h2>
+	  <div class="contact-adress">
+	  <p class="contact-text">
+		  Rue de Mulhouse, 36
+		  <br>
+		  4020 Liège Belgique
+	  </p>
+	  <a href="">
+      <button id="contact-btn">
+	   Itinéraire
+           <img id="contact-pointer" src="<?php echo get_template_directory_uri(); ?>/img/marker-map.svg" alt="pointer">
+      </button>
+      </a>
+	  </div>
+	</div>
+	<div class="col"style="width: 0.063rem;
+    flex: 0 0 0.063rem;max-width: 0.063rem;" id="contact-vertical-divider">
+<span class="contact-vertical-line"></span>
+</div>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+	<div class="col" id="contact-col-2" style="width: 81.75rem;
+    flex: 0 0 81.75rem;max-width: 81.75rem;">
+      <h2 class="contact-mail">
+		  info@lepole.be
+</h2>
+	  <div class="contact-phone">
+	  <img id="contact-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
+      <h2 class="contact-phone-number">
+		  32 4 239 69 01
+</h2>
+      </div>
 
-		<div class="row">
+	  <div class="contact-map">
+	  <?php the_field('map'); ?>
+	  <img id="contact-big-pointer" src="<?php echo get_template_directory_uri(); ?>/img/marker-map.svg" alt="pointer">
+	  </div>
+    </div>
 
-			<div class="col-md-12 content-area" id="primary">
+</div>
+</div>
+</div>
 
-				<main class="site-main" id="main" role="main">
-
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					}
-					?>
-
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row end -->
-
-	</div><!-- #content -->
-
-</div><!-- #full-width-page-wrapper -->
 
 <?php
 get_footer();

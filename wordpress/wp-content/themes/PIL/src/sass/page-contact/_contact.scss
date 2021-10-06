@@ -1,0 +1,98 @@
+#contact-part {
+	height: 70.751rem;
+	padding-top: 7.688rem;
+	#contact-container {
+		position: absolute;
+		width: 112.25rem;
+		height: 63.063rem;
+		left: 124px;
+		top: 148px;
+		.row {
+			height: 63.063rem;
+			#contact-col-1 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding-top: 5.938rem;
+				padding-right: 0;
+				padding-left: 0;
+				.contact-title {
+					margin-bottom: 16.375rem;
+					font-family: "IIVorkursBold";
+					letter-spacing: -0.38px;
+				}
+				.contact-text {
+					line-height: 32px;
+					font-family: "IIVorkursLight";
+					font-size: 18px;
+					margin-bottom: 2rem;
+				}
+				a {
+					#contact-btn {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 30px;
+						background-color: transparent;
+						border-color: white;
+						border-width: 1px;
+						color: white;
+						width: 9.544rem;
+						height: 2.875rem;
+						font-family: "IIVorkursMedium";
+						font-size: 18px;
+						#contact-pointer {
+							height: 40%;
+							margin-left: 0.5rem;
+						}
+					}
+				}
+			}
+			#contact-col-2 {
+				display: flex;
+				flex-direction: column;
+				padding-top: 5.938rem;
+				padding-right: 0;
+				padding-left: 0;
+				.contact-mail {
+					margin-left: 8.625rem;
+					margin-bottom: 2.188rem;
+					font-family: "IIVorkursLight";
+				}
+				.contact-phone {
+					display: flex;
+					align-items: center;
+					margin-left: 8.625rem;
+					margin-bottom: 8.25rem;
+					#contact-add {
+						width: 1.2%;
+						margin-bottom: 1.5rem;
+					}
+					.contact-phone-number {
+						font-family: "IIVorkursLight";
+					}
+				}
+				.contact-map {
+					height: 39.375rem;
+					width: 82.75rem;
+					#contact-big-pointer {
+					}
+				}
+			}
+		}
+		#contact-vertical-divider {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-right: 0;
+			padding-left: 0;
+			.contact-vertical-line {
+				display: inline-block;
+				margin-top: 0.5rem;
+				border-left: 1px solid #656565;
+				height: 62.877rem;
+			}
+		}
+	}
+}
