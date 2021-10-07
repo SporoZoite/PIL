@@ -55,15 +55,7 @@ $picture1 = $image1['sizes']['large'];
 		</div>
 	</div>
 
-	<div class="home-image-container" id="home-image-container">
-		<img src="#" class="img-fluid" alt="Responsive home-image">
-		<div class="btn-container" id="home-video-btn-container">
-			<button class="btn" id="home-video-btn">
-				<p id="home-video-btn-text"> Voir la vidéo</p>
-			</button>
-			<p id="home-video-btn-showreel">SHOWREEL 21</p>
-		</div>
-	</div>
+
 
 	<div class="row" id="home-cluster">
 		<div class="col" id="home-cluster-titre">
