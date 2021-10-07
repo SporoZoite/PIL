@@ -156,7 +156,10 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 
 <div id="home-formations">
 
-
+<div id="home-formations-circle-container">
+<div id="home-formations-circle">
+</div>
+</div>
 
 <h1 id="home-formations-titre">Formations audiovisuel</h1>
 <p id="home-formations-subtitle">Vous souhaitez vous former à un métier ou une compétence en pénurie en Wallonie ?</p>
@@ -181,9 +184,7 @@ aux métiers du digital, au gaming et à l’AR/VR.</h3>
 </button>
 </a>
 
-<div id="home-formations-circle">
 
-</div>
 
 </div><!-- end home-formations part -->
 

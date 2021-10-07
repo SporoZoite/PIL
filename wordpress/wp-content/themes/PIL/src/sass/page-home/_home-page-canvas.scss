@@ -12,17 +12,17 @@
 		.home-big-circle {
 			height: 55.578rem;
 			width: 55.578rem;
-			border:1px solid #4b4b4b;
+			border: 1px solid #4b4b4b;
 			border-radius: 50%;
-			background:rgba(0,0,0,0);
-			line-height:55.578rem;
+			background: rgba(0, 0, 0, 0);
+			line-height: 55.578rem;
 		}
 	}
 
 	#home-big-ellipse-container {
 		position: absolute;
 		left: 926px;
-		top: 1764px;
+		top: 1764.401px;
 		overflow: hidden;
 		width: 62rem;
 		height: 126.07rem;
@@ -42,6 +42,21 @@
 	left: 0px;
 	height: 1090px;
 	background: $white 0% 0% no-repeat padding-box;
+	#home-formations-circle-container {
+		position: absolute;
+		overflow: hidden;
+		left: 1422.049px;
+		top: 3437.238px;
+		width: 31.25rem;
+		height: 55.75rem;
+		#home-formations-circle {
+			width: 55.75rem;
+			height: 55.75rem;
+			border: 80px solid #EDEDED;
+			border-radius: 50%;
+			background: rgba(0, 0, 0, 0);
+		}
+	}
 }
 
 #home-entreprises {
