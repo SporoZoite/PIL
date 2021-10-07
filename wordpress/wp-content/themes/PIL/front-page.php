@@ -36,7 +36,7 @@ $picture1 = $image1['sizes']['large'];
 	<div id="home-title">
 		<h1 id="home-titre"><?php the_field('home-page-title'); ?></h1>
 
-
+		<p id="titre"><?php the_field('titre'); ?></p>
 		<?php if ($embed) {
 			echo $embed;
 		} else {
