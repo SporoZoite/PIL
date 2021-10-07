@@ -37,7 +37,7 @@ $picture1 = $image1['sizes']['large'];
 
 
 <?php if ($embed) {
-	echo $embed; 
+	echo $embed;
 } else {
 	echo '<img src="'.$picture1.'"class="img-fluid" id="picture1">';
 } ?>
@@ -48,7 +48,10 @@ $picture1 = $image1['sizes']['large'];
 </div>
 </div>
 
+<div id ="home-polygons-container">
 <div id ="home-polygons">
+<img class="home-polygons-svg" src="<?php echo get_template_directory_uri(); ?>/img/polygons.svg" alt="polygons">
+</div>
 </div>
 
 <div class="home-image-container" id="home-image-container">
