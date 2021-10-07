@@ -56,7 +56,6 @@ $picture1 = $image1['sizes']['large'];
 	</div>
 
 	<div class="home-image-container" id="home-image-container">
-
 		<img src="#" class="img-fluid" alt="Responsive home-image">
 		<div class="btn-container" id="home-video-btn-container">
 			<button class="btn" id="home-video-btn">

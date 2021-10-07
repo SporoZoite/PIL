@@ -5,10 +5,10 @@
 
 #home-title {
     position: absolute;
-        width: 1658px;
-        height: 920px;
-        left: 262px;
-        top: 266.5px;
+    width: 1658px;
+    height: 920px;
+    left: 262px;
+    top: 266.5px;
 }
 
 #home-titre {
@@ -17,4 +17,16 @@
     margin-block-end: 0;
     font-family: 'IIVorkursBold';
     letter-spacing: -3.8px;
+}
+
+#titre {
+    position: absolute;
+    width: 149.5px;
+    left: 623.5px;
+    top: 650px;
+    font-family: II Vorkurs;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
 }
