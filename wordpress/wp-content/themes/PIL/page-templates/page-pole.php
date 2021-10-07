@@ -12,43 +12,231 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
-
-if ( is_front_page() ) {
-	get_template_part( 'global-templates/hero' );
-}
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div id="pole-first-part">
+<div id="pole-big-ellipse-container">
+		<div id="pole-big-ellipse">
+			<img class="pole-big-ellipse-picto" src="<?php echo get_template_directory_uri(); ?>/img/ellipse.svg" alt="ellipse">
+		</div>
+	</div>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+<h1 id="pole-title"></h1>
+<p id="pole-intro"></p>
 
-		<div class="row">
+</div>
 
-			<div class="col-md-12 content-area" id="primary">
+<div id="pole-video-container">
+<img id="pole-video-temporary" src="<?php echo get_template_directory_uri(); ?>/img/Mask Group 98@2x.jpeg" alt="temp-img">
+</div>
 
-				<main class="site-main" id="main" role="main">
+<div id="pole-second-part">
+<div id="pole-circle-container">
+		<div id="pole-circle">
+		</div>
+	</div>
 
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
+<div id="pole-scrolling-text-container">
+<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
+		<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
+		<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
+		<p id="pole-scrolling-text">30+ entreprises / 400+ personnes / 35+</p>
+</div>
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					}
-					?>
+<div id="pole-team-container">
+	<h2 id="pole-team-title">Notre équipe</h2>
 
-				</main><!-- #main -->
+	<div class="pole-team-photos-container">
 
-			</div><!-- #primary -->
+		<div class="row" id="pole-photo-row-1">
 
-		</div><!-- .row end -->
+		<div class="col" id="pole-photo-row-1-col-1">
+		<div class="pole-team-photo-card">
+		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/caroline.png" alt="add">
+			<div class="pole-team-photo-hover">
+			<p class="pole-team-photo-name">Caroline</p>
+			   <div class="pole-team-photo-foot">
+				<p class="pole-team-photo-role">Rôle/sous-rôle</p>
+				<p class="pole-team-photo-email">caroline@lepole.be</p>
+			   </div>
+			</div>
+		</div>
+		</div>
 
-	</div><!-- #content -->
+		<div class="col" id="pole-photo-row-1-col-2">
+		<div class="pole-team-photo-card">
+		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/yuvraj.png" alt="add">
+			<div class="pole-team-photo-hover">
+			<p class="pole-team-photo-name">Yuvraj</p>
+			   <div class="pole-team-photo-foot">
+				<p class="pole-team-photo-role">Rôle/sous-rôle</p>
+				<p class="pole-team-photo-email">yuvraj@lepole.be</p>
+			   </div>
+			</div>
+		</div>
+        </div>
 
-</div><!-- #full-width-page-wrapper -->
+		<div class="col" id="pole-photo-row-1-col-3">
+		<div class="pole-team-photo-card">
+		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/andrea.png" alt="add">
+			<div class="pole-team-photo-hover">
+			<p class="pole-team-photo-name">Andrea</p>
+			   <div class="pole-team-photo-foot">
+				<p class="pole-team-photo-role">Rôle/sous-rôle</p>
+				<p class="pole-team-photo-email">andrea@lepole.be</p>
+			   </div>
+			</div>
+		</div>
+        </div>
+
+		</div>
+
+	<div class="row" id="pole-photo-row-2">
+
+		<div class="col" id="pole-photo-row-2-col-1">
+		<div class="pole-team-photo-card">
+		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/J.png" alt="add">
+			<div class="pole-team-photo-hover">
+			<p class="pole-team-photo-name">J</p>
+			   <div class="pole-team-photo-foot">
+				<p class="pole-team-photo-role">Rôle/sous-rôle</p>
+				<p class="pole-team-photo-email">j@lepole.be</p>
+			   </div>
+			</div>
+		</div>
+        </div>
+
+		<div class="col" id="pole-photo-row-2-col-2">
+		<div class="pole-team-photo-card">
+		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/alex.png" alt="add">
+			<div class="pole-team-photo-hover">
+			<p class="pole-team-photo-name">Alex</p>
+			   <div class="pole-team-photo-foot">
+				<p class="pole-team-photo-role">Rôle/sous-rôle</p>
+				<p class="pole-team-photo-email">alex@lepole.be</p>
+			   </div>
+			</div>
+		</div>
+		</div>
+
+
+		<div class="col" id="pole-photo-row-2-col-3">
+		<div class="pole-team-photo-card">
+		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/yellow.png" alt="add">
+			<div class="pole-team-photo-hover">
+			<p class="pole-team-photo-name">Ester</p>
+			   <div class="pole-team-photo-foot">
+				<p class="pole-team-photo-role">Administratif/accueil</p>
+				<p class="pole-team-photo-email">ester@lepole.be</p>
+			   </div>
+			</div>
+		</div>
+		</div>
+
+		</div>
+
+	</div>
+</div>
+</div>
+
+<div id="pole-actu-container">
+
+<div class="row" id="pole-actu-row">
+
+<div class= "col" id="pole-actu-col-1">
+	<div id="pole-actu-title-btn">
+       <h2 id="pole-actu-title">Actualités</h2>
+       <a href="">
+       <button id="pole-fb-btn">
+	   Itinéraire
+           <img id="pole-fb" src="<?php echo get_template_directory_uri(); ?>/img/marker-map.svg" alt="fb">
+       </button>
+       </a>
+	</div>
+	<div id="pole-actu-arrows">
+	<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-conctact.svg" alt="arrow right">
+	<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-conctact.svg" alt="arrow right">
+	</div>
+</div>
+
+<div class="col" id="pole-actu-cards-container-1">
+	<div class="pole-actu-card">
+
+		<div class="pole-actu-card-top">
+			<p class="pole-actu-card-date">14 juillet 2021</p>
+			<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-card">
+		</div>
+
+		<div class="pole-actu-card-horizontal-divider">
+         <span class="pole-actu-card-horizontal-line"></span>
+        </div>
+
+		<div class="pole-actu-card-text">
+			<p class="pole-actu-text">BeCode.org vous donne rendez-vous le 22 juillet
+				 au Pôle pour leurs portes ouvertes ! … </p>
+		</div>
+	</div>
+</div>
+
+<div class="col" id="pole-actu-cards-container-2">
+	<div class="pole-actu-card">
+
+		<div class="pole-actu-card-top">
+			<p class="pole-actu-card-date">9 juillet 2021</p>
+			<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-card">
+		</div>
+
+		<div class="pole-actu-card-horizontal-divider">
+         <span class="pole-actu-card-horizontal-line"></span>
+        </div>
+
+		<div class="pole-actu-card-text">
+			<p class="pole-actu-text">Plus d’informations sur le premier incubateur wallon
+				 dédié aux jeux vidéo, Wild bishop, installé au Pôle ! …</p>
+		</div>
+	</div>
+</div>
+
+<div class="col" id="pole-actu-cards-container-3">
+	<div class="pole-actu-card">
+
+		<div class="pole-actu-card-top">
+			<p class="pole-actu-card-date">14 juillet 2021</p>
+			<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-card">
+		</div>
+
+		<div class="pole-actu-card-horizontal-divider">
+         <span class="pole-actu-card-horizontal-line"></span>
+        </div>
+
+		<div class="pole-actu-card-text">
+			<p class="pole-actu-text">BeCode.org vous donne rendez-vous le 22 juillet
+				 au Pôle pour leurs portes ouvertes ! … </p>
+		</div>
+	</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="pole-last-part">
+
+<img id="pole-desk-img" src="<?php echo get_template_directory_uri(); ?>
+/img/Mask Group 93@2x.jpeg" alt="bureau-img">
+
+<div id="pole-desk-title-container">
+	<p id="pole-desk-subtitle">Vous êtes intéressés par</p>
+	<h1 id="pole-desk-title">Un bureau, une location ponctuelle d'un de nos espaces
+		ou un moyen de production?</h1>
+</div>
+
+<div id ="pole-desk-circle-up">
+<img id="pole-desk-arrow-up" src="<?php echo get_template_directory_uri(); ?>
+/img/arrow-right.svg" alt="bureau-img">
+</div>
+
+</div>
 
 <?php
 get_footer();
