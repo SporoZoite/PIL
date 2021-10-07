@@ -8,9 +8,7 @@
  */
 
 
-// EMBED A VIDEO
 
-$embed = get_field('embed_a_video');
 // var_dump($embed);
 
 
@@ -19,16 +17,35 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
+
+
+// EMBED A VIDEO / IMAGE
+
+$embed = get_field('embed_a_video');
+$image1 = get_field('home_image_1');
+$picture1 = $image1['sizes']['large'];
+
+
 ?>
+
+
 
 <div id="home-first-part">
 
+<div id ="home-title">
 <h1 id="home-titre"><?php the_field('home-page-title'); ?></h1>
 
-<?= $embed; ?>
+
+<?php if ($embed) {
+	echo $embed; 
+} else {
+	echo '<img src="'.$picture1.'"class="img-fluid" id="picture1">';
+} ?>
+
 
 <div id="arrow-down">
 	<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.svg" alt="arrow-down">
+</div>
 </div>
 
 <div id ="home-polygons">
