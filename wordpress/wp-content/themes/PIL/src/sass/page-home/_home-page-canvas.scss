@@ -2,6 +2,18 @@
 	color: $white;
 	background-color: $secondary;
 	height: 3240px;
+	#home-polygons-container{
+		position: absolute;
+		width: 0.75rem;
+		height: 42.372rem;
+		left: 1910.349px;
+		top: 812.563px;
+		overflow: hidden;
+		#home-polygons{
+			width: 14.65rem;
+			height:  42.372rem;
+		}
+	}
 	#home-big-circle-container {
 		position: absolute;
 		left: -444.62px;
