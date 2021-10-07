@@ -1,3 +1,17 @@
+#contact-polygons-container {
+	position: absolute;
+	width: 0.75rem;
+	height: 42.372rem;
+	left: 1910.349px;
+	top: 812.563px;
+	overflow: hidden;
+	z-index: 1;
+	#contact-polygons {
+		width: 14.65rem;
+		height: 42.372rem;
+	}
+}
+
 #contact-part {
 	height: 70.751rem;
 	padding-top: 7.688rem;
@@ -36,7 +50,7 @@
 						background-color: transparent;
 						border-color: white;
 						border-width: 1px;
-						border-style:solid;
+						border-style: solid;
 						color: white;
 						width: 9.544rem;
 						height: 2.875rem;
@@ -77,8 +91,9 @@
 					height: 39.375rem;
 					width: 82.75rem;
 					overflow: hidden;
-					iframe{
-						filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(314deg) brightness(100%) contrast(100%);
+					iframe {
+						filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(314deg)
+							brightness(100%) contrast(100%);
 					}
 					#contact-big-pointer {
 						position: absolute;
@@ -108,16 +123,14 @@
 	}
 }
 
-
 .contact-horizontal-divider {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin:-1px;
+	margin: -1px;
 	.contact-horizontal-line {
 		display: inline-block;
 		border-top: 1px solid #656565;
 		width: 1920px;
-
 	}
 }
