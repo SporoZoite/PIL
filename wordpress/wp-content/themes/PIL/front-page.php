@@ -43,11 +43,12 @@ $picture1 = $image1['sizes']['large'];
 			echo '<img src="' . $picture1 . '"class="img-fluid" id="picture1">';
 		} ?>
 
-
-		<div id="arrow-down">
+        <a href="#here">
+		<div class="scroll-down">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.svg" id="scroll-arrow" alt="arrow-down">
 		</div>
 	</div>
+	</a>
 
 	<div id="home-polygons-container">
 		<div id="home-polygons">
@@ -56,7 +57,7 @@ $picture1 = $image1['sizes']['large'];
 	</div>
 
 	<!-- INTRODUCTION ACF -->
-
+ <div id="here"></div>
 
 	<h3 id="intro-text"><?php the_field('introduction'); ?></h3>
 
