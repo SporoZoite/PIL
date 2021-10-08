@@ -16888,6 +16888,7 @@ body .row {
   top: 3469.238px;
   width: 31.25rem;
   height: 55.75rem;
+  mix-blend-mode: multiply;
 }
 #home-formations #home-formations-circle-container #home-formations-circle {
   width: 55.75rem;
@@ -17096,57 +17097,60 @@ body .row {
 .list-group-item {
   background-color: transparent;
   border: none;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 17px;
+  font-family: "IIVorkursLight";
 }
 
 .list-group-item::before {
   position: absolute;
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cg id='file-add' transform='translate(0.5 -2.5)'%3E%3Cline id='Line_570' data-name='Line 570' y2='10' transform='translate(5 3)' fill='none' stroke='%23ffc33b' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1'/%3E%3Cline id='Line_571' data-name='Line 571' x1='10' transform='translate(0 8)' fill='none' stroke='%23ffc33b' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 10px 10px;
-  height: 10px;
-  width: 10px;
-  left: -33px;
-  top: 19px;
+  background-size: 0.625rem 0.625rem;
+  height: 0.625rem;
+  width: 0.625rem;
+  left: -45px;
+  top: 10px;
 }
 
 #intro-text {
   position: absolute;
   top: 1354px;
   left: 262px;
-  width: 334px;
-  height: 273px;
+  width: 20.875rem;
+  height: 17.063rem;
+  line-height: 2.938rem;
 }
 
-#home-intro-1 {
+#container-intro-1 #home-intro-1 {
   position: absolute;
-  width: 135px;
-  height: 58px;
-  left: 845px;
+  width: 8.438rem;
+  height: 3.625rem;
   top: 1354px;
+  left: 852px;
 }
-
-#home-intro-2 {
-  position: absolute;
-  width: 178px;
-  height: 58px;
-  left: 1319px;
-  top: 1354px;
-}
-
-#list-group-1 {
+#container-intro-1 #list-group-1 {
   position: absolute;
   top: 1447px;
-  left: 877px;
-  width: 258px;
-  height: 249px;
+  left: 899px;
+  width: 16.125rem;
+  height: 15.563rem;
 }
 
-#list-group-2 {
+#container-intro-2 #home-intro-2 {
+  position: absolute;
+  width: 11.125rem;
+  height: 3.625rem;
+  top: 1354px;
+  left: 1324px;
+}
+#container-intro-2 #list-group-2 {
   position: absolute;
   top: 1446px;
-  left: 1353px;
-  width: 258px;
-  height: 251px;
+  left: 1369px;
+  width: 16.125rem;
+  height: 15.688rem;
 }
 
 #home-formations {
@@ -17160,6 +17164,10 @@ body .row {
   grid-column: 1;
   grid-row: 1/6;
   margin: -155px 0 0 235px;
+  top: 3084px;
+  left: 263px;
+  width: 568px;
+  height: 945px;
 }
 
 #home-formations-titre {
