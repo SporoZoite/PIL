@@ -213,6 +213,8 @@ $picture1 = $image1['sizes']['large'];
 		</div>
 	</div>
 
+	<img scr="<?php echo get_template_directory_uri();?>/img/Mask Group 89@2x.jpg" id="home-formations-image">
+
 	<h1 id="home-formations-titre">Formations audiovisuel</h1>
 	<p id="home-formations-subtitle">Vous souhaitez vous former à un métier ou une compétence en pénurie en Wallonie ?</p>
 	<p id="home-formations-text">Rendez-vous sur le site de l’ACA, notre projet dédié
