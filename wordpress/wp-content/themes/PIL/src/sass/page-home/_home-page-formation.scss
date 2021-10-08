@@ -8,6 +8,10 @@
 	grid-column: 1;
 	grid-row: 1/6;
 	margin: -155px 0 0 235px;
+	top: 3084px;
+	left: 263px;
+	width: 568px;
+	height: 945px;
 }
 #home-formations-titre {
 	margin: 100px 20px 0 0;
@@ -25,12 +29,14 @@
 p#home-formations-subtitle {
 	grid-column: 2/3;
 	grid-row: 2/3;
-	margin: 34px 490px 0 0;
+	margin: 34px 437px 0 0;
 	text-align: left;
 	font-family: "IIVorkursLight";
 	font-size: 24px;
 	letter-spacing: 0.4px;
 	color: #171717;
+	z-index: 10;
+	line-height: 38px;
 }
 p#home-formations-text {
 	grid-column: 2/3;
@@ -41,13 +47,16 @@ p#home-formations-text {
 	font-size: 20px;
 	letter-spacing: 0.4px;
 	color: #171717;
+	z-index: 20;
+	line-height: 38px;
 }
 .home-formations-lists-container {
 	display: flex;
 	flex-direction: row;
 	grid-column: 2/3;
 	grid-row: 4/5;
-	margin: -76px 0 0 0;
+	z-index: 20;
+	margin: -100px 0 0 0;
 	left: 1015px;
 	height: 144px;
 	line-height: 40px;
@@ -92,9 +101,8 @@ p#home-formations-text {
 a.home-formations-btn {
 	width: 201px;
 	height: 46px;
-	border: 1px solid #171717;
 	font-size: 19px;
-	background-color:$white;
+	background-color: $white;
 	margin: -60px 0 0 0;
 }
 #home-formations-add {
