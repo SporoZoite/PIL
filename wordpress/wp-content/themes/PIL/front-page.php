@@ -55,10 +55,51 @@ $picture1 = $image1['sizes']['large'];
 		</div>
 	</div>
 
+	<!-- INTRODUCTION ACF -->
 
 
-	<div class="row" id="home-cluster">
-		<div class="col" id="home-cluster-titre">
+	<h3 id="intro-text"><?php the_field('introduction'); ?></h3>
+
+
+	<div id="container-intro-1">
+		<h4 id="home-intro-1"><?php the_field('titre-liste-1'); ?></h4>
+		<?php if (have_rows('liste-1')); ?>
+
+		<ul class="list-group" id="list-group-1">
+
+			<?php while (have_rows('liste-1')) : the_row(); ?>
+
+				<li class="list-group-item">
+
+					<?php the_sub_field('items-1'); ?>
+				</li>
+
+			<?php endwhile; ?>
+
+		</ul>
+	</div>
+
+	<div id="container-intro-2">
+		<h4 id="home-intro-2"><?php the_field('titre-liste-2'); ?></h4>
+		<?php if (have_rows('liste-2')); ?>
+
+		<ul class="list-group" id="list-group-2">
+
+			<?php while (have_rows('liste-2')) : the_row(); ?>
+
+				<li class="list-group-item">
+
+					<?php the_sub_field('items-2'); ?>
+				</li>
+
+			<?php endwhile; ?>
+
+		</ul>
+	</div>
+
+
+	<!-- <div class="row" id="home-cluster">
+		<div class="col" id="home-cluster-titre"><?php the_field('introduction'); ?>
 			<h3>Le plus grand cluster d’entreprises wallon dédié à l’audiovisuel,
 				aux métiers du digital, au gaming et à l’AR/VR.</h3>
 		</div>
@@ -74,7 +115,7 @@ $picture1 = $image1['sizes']['large'];
 			<ul>Liste 2</ul>
 		</div>
 
-	</div>
+	</div> -->
 
 
 
