@@ -120,7 +120,8 @@ $picture1 = $image1['sizes']['large'];
 
 
 	<div id="home-scrolling-text-container">
-		<p id="home-scrolling-text">30<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> entreprises / 400<img class="home-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> personnes / 35<img class="home-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"></p></p>
+		<p id="home-scrolling-text">30<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> entreprises / 400<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> personnes / 35<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"></p>
+		</p>
 	</div>
 
 	<div id="home-big-circle-container">
@@ -210,7 +211,15 @@ $picture1 = $image1['sizes']['large'];
 		</div>
 	</div>
 
-	<img scr="<?php echo get_template_directory_uri();?>/img/Mask Group 89@2x.jpeg" id="home-formations-image">
+	<?php
+	$image2 = get_field('home-formations-image');
+	$picture2 = $image2['sizes']['large'];
+	?>
+
+	<?php
+	echo '<img src="' . $picture2 . '"class="img-fluid" id="home-formations-image">';
+	?>
+
 
 	<h1 id="home-formations-titre">Formations audiovisuel</h1>
 	<p id="home-formations-subtitle">Vous souhaitez vous former à un métier ou une compétence en pénurie en Wallonie ?</p>
