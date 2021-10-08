@@ -139,13 +139,13 @@ $container = get_theme_mod( 'understrap_container_type' );
        <a href="">
        <button id="pole-fb-btn">
 	   Suivez-nous
-           <img id="pole-fb" src="<?php echo get_template_directory_uri(); ?>/img/f.svg" alt="fb">
+           <img id="pole-fb" src="<?php echo get_template_directory_uri(); ?>/img/fb.svg" alt="fb">
        </button>
        </a>
 	</div>
 	<div id="pole-actu-arrows">
-	<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-conctact.svg" alt="arrow right">
-	<img class="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-conctact.svg" alt="arrow right">
+	<img class="pole-arrow" id="pole-arrow-left" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-right">
+	<img class="pole-arrow" id="pole-arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.svg" alt="arrow-left">
 	</div>
 </div>
 
@@ -162,7 +162,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
 
 		<div class="pole-actu-card-text">
-			<p class="pole-actu-text">BeCode.org vous donne rendez-vous le 22 juillet
+			<p class="pole-actu-text"><span style="color: #FFC33B">BeCode.org</span> vous donne rendez-vous le 22 juillet
 				 au Pôle pour leurs portes ouvertes ! … </p>
 		</div>
 	</div>
@@ -181,7 +181,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="pole-actu-card-text">
 			<p class="pole-actu-text">Plus d’informations sur le premier incubateur wallon
-				 dédié aux jeux vidéo, Wild bishop, installé au Pôle ! …</p>
+				 dédié aux jeux vidéo, <span style="color: #FFC33B">Wild bishop</span>, installé au Pôle ! …</p>
 		</div>
 	</div>
 
@@ -198,7 +198,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
 
 		<div class="pole-actu-card-text">
-			<p class="pole-actu-text">BeCode.org vous donne rendez-vous le 22 juillet
+			<p class="pole-actu-text"><span style="color: #FFC33B">BeCode.org</span> vous donne rendez-vous le 22 juillet
 				 au Pôle pour leurs portes ouvertes ! … </p>
 		</div>
 	</div>
@@ -215,8 +215,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div id="pole-desk-title-container">
 	<p id="pole-desk-subtitle">Vous êtes intéressés par</p>
-	<h1 id="pole-desk-title">Un <span style="color: #FFC33B">bureau</span>, une <span style="color: #FFC33B">location ponctuelle</span> d'un de nos espaces
-		ou un moyen de <span style="color: #FFC33B">production</span>?</h1>
+	<h2 id="pole-desk-title">Un <span style="color: #FFC33B">bureau</span>, une <span style="color: #FFC33B">location ponctuelle</span> d'un de nos espaces
+		ou un moyen de <span style="color: #FFC33B">production</span>?</h2>
 </div>
 
 <div id ="pole-desk-circle-up">
@@ -226,7 +226,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div>
 
-<div id="test-svg">booh</div>
 
 <?php
 get_footer();
