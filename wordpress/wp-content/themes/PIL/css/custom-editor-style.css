@@ -23,29 +23,6 @@
   font-style: normal;
   font-display: swap;
 }
-.custom-cursor {
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-transition: -webkit-transform 350ms ease;
-  transition: -webkit-transform 350ms ease;
-  transition: transform 350ms ease;
-  transition: transform 350ms ease, -webkit-transform 350ms ease;
-  -webkit-transform: translate(-50%, -50%) scale(0.3);
-  transform: translate(-50%, -50%) scale(0.3);
-  z-index: 1000;
-}
-
-.custom-cursor--link {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
-}
-
 *,
 *::before,
 *::after {
@@ -382,7 +359,7 @@ template {
   --white: #ffffff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #FFC33B;
+  --primary: #ffc33b;
   --secondary: #171717;
   --success: #28a745;
   --info: #17a2b8;
@@ -1037,12 +1014,12 @@ mark,
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #FFC33B;
+  color: #ffc33b;
 }
 
 .has-primary-background-color {
-  background-color: #FFC33B;
-  border-color: #FFC33B;
+  background-color: #ffc33b;
+  border-color: #ffc33b;
 }
 
 .has-secondary-color,
