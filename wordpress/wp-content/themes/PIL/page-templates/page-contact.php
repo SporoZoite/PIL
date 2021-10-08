@@ -13,6 +13,11 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+	<div id="contact-polygons-container">
+		<div id="contact-polygons">
+			<img class="contact-polygons-svg" src="<?php echo get_template_directory_uri(); ?>/img/polygons.svg" alt="polygons">
+		</div>
+	</div>
 
 <div id="contact-part">
 <div id="contact-container">
@@ -41,6 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="col" id="contact-col-2" style="width: 81.75rem;
     flex: 0 0 81.75rem;max-width: 81.75rem;">
+
       <h2 class="contact-mail">
 		  info@lepole.be
 </h2>

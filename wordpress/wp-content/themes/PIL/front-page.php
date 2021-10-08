@@ -55,10 +55,51 @@ $picture1 = $image1['sizes']['large'];
 		</div>
 	</div>
 
+	<!-- INTRODUCTION ACF -->
 
 
-	<div class="row" id="home-cluster">
-		<div class="col" id="home-cluster-titre">
+	<h3 id="intro-text"><?php the_field('introduction'); ?></h3>
+
+
+	<div id="container-intro-1">
+		<h4 id="home-intro-1"><?php the_field('titre-liste-1'); ?></h4>
+		<?php if (have_rows('liste-1')); ?>
+
+		<ul class="list-group" id="list-group-1">
+
+			<?php while (have_rows('liste-1')) : the_row(); ?>
+
+				<li class="list-group-item">
+
+					<?php the_sub_field('items-1'); ?>
+				</li>
+
+			<?php endwhile; ?>
+
+		</ul>
+	</div>
+
+	<div id="container-intro-2">
+		<h4 id="home-intro-2"><?php the_field('titre-liste-2'); ?></h4>
+		<?php if (have_rows('liste-2')); ?>
+
+		<ul class="list-group" id="list-group-2">
+
+			<?php while (have_rows('liste-2')) : the_row(); ?>
+
+				<li class="list-group-item">
+
+					<?php the_sub_field('items-2'); ?>
+				</li>
+
+			<?php endwhile; ?>
+
+		</ul>
+	</div>
+
+
+	<!-- <div class="row" id="home-cluster">
+		<div class="col" id="home-cluster-titre"><?php the_field('introduction'); ?>
 			<h3>Le plus grand cluster d’entreprises wallon dédié à l’audiovisuel,
 				aux métiers du digital, au gaming et à l’AR/VR.</h3>
 		</div>
@@ -74,15 +115,12 @@ $picture1 = $image1['sizes']['large'];
 			<ul>Liste 2</ul>
 		</div>
 
-	</div>
+	</div> -->
 
 
 
 	<div id="home-scrolling-text-container">
-		<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<p id="home-scrolling-text">30+ entreprises / 400+ personnes / 35+</p>
+		<p id="home-scrolling-text">30<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> entreprises / 400<img class="home-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> personnes / 35<img class="home-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"></p></p>
 	</div>
 
 	<div id="home-big-circle-container">
@@ -164,7 +202,6 @@ $picture1 = $image1['sizes']['large'];
 
 </div> <!-- end first part div -->
 
-<img src="" id="home-formations-image">
 
 <div id="home-formations">
 
@@ -172,6 +209,8 @@ $picture1 = $image1['sizes']['large'];
 		<div id="home-formations-circle">
 		</div>
 	</div>
+
+	<img scr="<?php echo get_template_directory_uri();?>/img/Mask Group 89@2x.jpeg" id="home-formations-image">
 
 	<h1 id="home-formations-titre">Formations audiovisuel</h1>
 	<p id="home-formations-subtitle">Vous souhaitez vous former à un métier ou une compétence en pénurie en Wallonie ?</p>
@@ -182,21 +221,33 @@ $picture1 = $image1['sizes']['large'];
 
 	<div class="home-formations-lists-container">
 		<div class="home-formations-list" id="home-formations-list-1">
-			<ul>List 1</ul>
+			<ul id="home-formations-list-ul-1">
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Développeur web par Becode</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Animateur 3D / 2D</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Storyboarding</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Assistant de production</li>
+			</ul>
 		</div>
 		<div class="home-formations-list" id="home-formations-list-2">
-			<ul>List 2</ul>
+			<ul id="home-formations-list-ul-2">
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Salles de montage son/image</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Motion Design</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Pro Tools</li>
+			</ul>
 		</div>
 	</div>
 
-	<a href="">
+
+	<a href="#" class="home-formations-btn">
 		<button id="home-formations-btn">
 			Voir le site ACA
 			<img id="home-formations-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
 		</button>
 	</a>
 
+	<div id="home-formations-circle">
 
+	</div>
 
 </div><!-- end home-formations part -->
 
