@@ -27,11 +27,12 @@
 	font-family: "IIVorkursBold";
 	letter-spacing: -3.8px;
 	color: #171717;
+	line-height: 90px;
 }
 p#home-formations-subtitle {
 	grid-column: 2/3;
 	grid-row: 2/3;
-	margin: 34px 490px 0 0;
+	margin: 34px 390px 0 0;
 	text-align: left;
 	font-family: "IIVorkursLight";
 	font-size: 24px;
@@ -98,11 +99,11 @@ p#home-formations-text {
 a.home-formations-btn {
 	width: 201px;
 	height: 46px;
-	border: 1px solid #171717;
 	font-size: 19px;
 	background-color:$white;
 	margin: -60px 0 0 0;
 }
+
 #home-formations-add {
 	margin: -7px 0px 0px 5px;
 	filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(254deg) brightness(0%)

@@ -45,7 +45,7 @@ $picture1 = $image1['sizes']['large'];
 
 
 		<div id="arrow-down">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.svg" alt="arrow-down">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.svg" id="scroll-arrow" alt="arrow-down">
 		</div>
 	</div>
 
