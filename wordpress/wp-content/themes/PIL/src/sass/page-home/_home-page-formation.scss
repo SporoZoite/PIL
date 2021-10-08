@@ -35,7 +35,6 @@ p#home-formations-subtitle {
 	font-size: 24px;
 	letter-spacing: 0.4px;
 	color: #171717;
-	z-index: 10;
 	line-height: 38px;
 }
 p#home-formations-text {
@@ -47,7 +46,6 @@ p#home-formations-text {
 	font-size: 20px;
 	letter-spacing: 0.4px;
 	color: #171717;
-	z-index: 20;
 	line-height: 38px;
 }
 .home-formations-lists-container {
@@ -55,7 +53,6 @@ p#home-formations-text {
 	flex-direction: row;
 	grid-column: 2/3;
 	grid-row: 4/5;
-	z-index: 20;
 	margin: -100px 0 0 0;
 	left: 1015px;
 	height: 144px;
