@@ -205,7 +205,6 @@ $picture1 = $image1['sizes']['large'];
 
 </div> <!-- end first part div -->
 
-<img src="" id="home-formations-image">
 
 <div id="home-formations">
 
@@ -223,21 +222,33 @@ $picture1 = $image1['sizes']['large'];
 
 	<div class="home-formations-lists-container">
 		<div class="home-formations-list" id="home-formations-list-1">
-			<ul>List 1</ul>
+			<ul id="home-formations-list-ul-1">
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Développeur web par Becode</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Animateur 3D / 2D</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Storyboarding</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Assistant de production</li>
+			</ul>
 		</div>
 		<div class="home-formations-list" id="home-formations-list-2">
-			<ul>List 2</ul>
+			<ul id="home-formations-list-ul-2">
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Salles de montage son/image</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Motion Design</li>
+				<li><img class="home-formation-list-plus" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">Pro Tools</li>
+			</ul>
 		</div>
 	</div>
 
-	<a href="">
+
+	<a href="#" class="home-formations-btn">
 		<button id="home-formations-btn">
 			Voir le site ACA
 			<img id="home-formations-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
 		</button>
 	</a>
 
+	<div id="home-formations-circle">
 
+	</div>
 
 </div><!-- end home-formations part -->
 
