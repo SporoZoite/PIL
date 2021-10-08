@@ -1,0 +1,161 @@
+#pole-scrolling-text-container {
+	mix-blend-mode: normal;
+	position: absolute;
+	width: 120rem;
+	height: 11.5rem;
+	left: 0px;
+	top: 1893.867px;
+	overflow: hidden;
+	color: $secondary;
+	#pole-scrolling-text {
+		width: 135.125rem;
+		height: 9.5rem;
+		margin: 0;
+		text-align: left;
+		font-family: "IIVorkursLight";
+		font-size: 8.438rem;
+		color: rgba(23, 23, 23, 1);
+		letter-spacing: -0.38px;
+		.pole-scrolling-text-add {
+			width: 2.375rem;
+			height: 2.375rem;
+			margin-bottom: 4.375rem;
+		}
+	}
+}
+
+#pole-team-container {
+	position: absolute;
+	width: 87.25rem;
+	height: 78.375rem;
+	left: 262px;
+	top: 2142.996px;
+	#pole-team-title {
+		color: rgba(23, 23, 23, 1);
+		letter-spacing: -0.38px;
+		text-align: left;
+		font-family: "IIVorkursBold";
+		margin: 0;
+	}
+	.pole-team-photos-container {
+		position: absolute;
+		width: 87.25rem;
+		height: 69.813rem;
+		top: 8.563rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		overflow: hidden;
+		.pole-team-photo-row {
+			width: 87.25rem;
+			max-width: 87.25rem;
+			height: 34.625rem;
+			max-height: 34.625rem;
+			overflow: hidden;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			.pole-team-photo-card {
+				width: 28.25rem;
+				height: 33.938rem;
+				overflow: hidden;
+				.pole-team-photo {
+					width: 28.25rem;
+					height: 33.938rem;
+				}
+				.pole-team-photo-hover {
+					display: none;
+				}
+			}
+			.pole-team-photo-card:hover {
+				.pole-team-photo {
+					display: none;
+				}
+				.pole-team-photo-hover {
+					width: 28.25rem;
+					height: 33.938rem;
+					padding: 3.125rem 3.688rem;
+					background-color: #ffc33b;
+					color: $secondary;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.pole-team-photo-name {
+						font-size: 34px;
+					}
+					.pole-team-photo-foot {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+#pole-actu-container {
+	position: absolute;
+	width: 103.625rem;
+	height: 27.167rem;
+	left: 262px;
+	top: 3694.996px;
+	overflow: hidden;
+	#pole-actu-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 116.875rem;
+		height: 27.167rem;
+		left: 262px;
+		top: 3694.996px;
+		color: $secondary;
+		overflow: hidden;
+		.col {
+			padding: 0;
+		}
+		#pole-actu-col-1 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		#pole-actu-cards-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			overflow: hidden;
+			top: 0.672px;
+			.pole-actu-card {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				background-color: #212121;
+				height: 27.125rem;
+				width: 28.276rem;
+				padding: 2.375rem 3.063rem;
+				color: $white;
+				font-family: "IIVorkursLight";
+				font-size: 20px;
+				.pole-actu-card-top {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					.pole-arrow-right {
+						width: 2.838rem;
+						height: 2.88rem;
+						filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(102%) contrast(102%);
+					}
+				}
+			}
+		}
+	}
+}
+
+#test-svg::before{
+	content: "";
+    position: absolute;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cg id='file-add' transform='translate(0.5 -2.5)'%3E%3Cline id='Line_570' data-name='Line 570' y2='10' transform='translate(5 3)' fill='none' stroke='%23ffc33b' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1'/%3E%3Cline id='Line_571' data-name='Line 571' x1='10' transform='translate(0 8)' fill='none' stroke='%23ffc33b' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+    height: 40px;
+    width: 60px;
+	
+}
