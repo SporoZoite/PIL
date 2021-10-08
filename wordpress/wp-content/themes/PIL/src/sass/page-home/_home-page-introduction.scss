@@ -1,0 +1,62 @@
+.list-group-item {
+    // position: absolute;
+    // width: 1396px;
+    // height: 343px;
+    // left: 262px;
+    // top: 1354px;
+    background-color: transparent;
+    border: none;
+}
+
+.list-group-item::before {
+    position: absolute;
+    content: '';
+    // color: yellow;
+    // padding-right: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cg id='file-add' transform='translate(0.5 -2.5)'%3E%3Cline id='Line_570' data-name='Line 570' y2='10' transform='translate(5 3)' fill='none' stroke='%23ffc33b' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1'/%3E%3Cline id='Line_571' data-name='Line 571' x1='10' transform='translate(0 8)' fill='none' stroke='%23ffc33b' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    left: -33px;
+    top: 19px;
+}
+
+#intro-text {
+    position: absolute;
+    top: 1354px;
+    left: 262px;
+    width: 334px;
+    height: 273px;
+}
+
+#home-intro-1 {
+    position: absolute;
+    width: 135px;
+    height: 58px;
+    left: 845px;
+    top: 1354px;
+}
+
+#home-intro-2 {
+    position: absolute;
+    width: 178px;
+    height: 58px;
+    left: 1319px;
+    top: 1354px;
+}
+
+#list-group-1 {
+    position: absolute;
+    top: 1447px;
+    left: 877px;
+    width: 258px;
+    height: 249px;
+}
+
+#list-group-2 {
+    position: absolute;
+    top: 1446px;
+    left: 1353px;
+    width: 258px;
+    height: 251px;
+}

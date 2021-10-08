@@ -1,0 +1,48 @@
+#pole-first-part {
+	color: $white;
+	background-color: $secondary;
+	height: 1291px;
+	#pole-big-ellipse-container {
+		position: absolute;
+		left: 547px;
+		top: -406.599px;
+		overflow: hidden;
+		width: 85.938rem;
+		height: 121.688rem;
+		#pole-big-ellipse {
+			width: 133.01rem;
+			height: 126.07rem;
+			.pole-big-ellipse-picto {
+				width: 133.01rem;
+				height: 126.07rem;
+			}
+		}
+	}
+}
+
+#pole-second-part {
+	background-color: $white;
+	height: 2652px;
+	#pole-circle-container {
+		position: absolute;
+		overflow: hidden;
+		left: 1429.049px;
+		top: 3466.332px;
+		width: 31.25rem;
+		height: 55.75rem;
+			#pole-circle {
+				width: 55.75rem;
+				height: 55.75rem;
+				border: 80px solid #ededed;
+				border-radius: 50%;
+				background: rgba(0, 0, 0, 0);
+				mix-blend-mode:multiply !important;
+			}
+	}
+}
+
+#pole-last-part {
+	color: $white;
+	background-color: $secondary;
+	height: 1037px;
+}

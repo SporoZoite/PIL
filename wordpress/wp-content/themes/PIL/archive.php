@@ -30,11 +30,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				if ( have_posts() ) {
 					?>
 					<header class="page-header">
-						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
-						?>
-					</header><!-- .page-header -->
+					<h2 class="column-title">Secteurs </h2>
+
 					<?php
 					// Start the loop.
 					while ( have_posts() ) {
