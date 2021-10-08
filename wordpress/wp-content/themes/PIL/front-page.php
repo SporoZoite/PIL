@@ -120,10 +120,7 @@ $picture1 = $image1['sizes']['large'];
 
 
 	<div id="home-scrolling-text-container">
-		<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<p id="home-scrolling-text">30+ entreprises / 400+ personnes / 35+</p>
+		<p id="home-scrolling-text">30<img class="home-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> entreprises / 400<img class="home-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> personnes / 35<img class="home-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"></p></p>
 	</div>
 
 	<div id="home-big-circle-container">
