@@ -21,8 +21,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 
-<h1 id="pole-title"></h1>
-<p id="pole-intro"></p>
+<h1 id="pole-title">Le <span style="color: #FFC33B">grand cluster</span> dédié aux industries créatives</h1>
+<p id="pole-intro"> Installé dans une ancienne fabrique de tabac totalement
+	 rénovée, le Pôle est devenu le plus grand cluster d’entreprises wallon
+	  dédié à l’audiovisuel, aux métiers du digital ainsi qu’au gaming et à
+	   l’AR/VR.</p>
 
 </div>
 
@@ -37,10 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 
 <div id="pole-scrolling-text-container">
-<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add">
-		<p id="pole-scrolling-text">30+ entreprises / 400+ personnes / 35+</p>
+		<p id="pole-scrolling-text">
+			30<img class="pole-scrolling-text-add" src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> entreprises / 400<img class="pole-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"> personnes / 35<img class="pole-scrolling-text-add"src="<?php echo get_template_directory_uri(); ?>/img/add.svg" alt="add"></p>
 </div>
 
 <div id="pole-team-container">
@@ -48,9 +49,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="pole-team-photos-container">
 
-		<div class="row" id="pole-photo-row-1">
+		<div class="pole-team-photo-row">
 
-		<div class="col" id="pole-photo-row-1-col-1">
 		<div class="pole-team-photo-card">
 		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/caroline.png" alt="add">
 			<div class="pole-team-photo-hover">
@@ -61,9 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			   </div>
 			</div>
 		</div>
-		</div>
 
-		<div class="col" id="pole-photo-row-1-col-2">
 		<div class="pole-team-photo-card">
 		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/yuvraj.png" alt="add">
 			<div class="pole-team-photo-hover">
@@ -74,9 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			   </div>
 			</div>
 		</div>
-        </div>
 
-		<div class="col" id="pole-photo-row-1-col-3">
 		<div class="pole-team-photo-card">
 		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/andrea.png" alt="add">
 			<div class="pole-team-photo-hover">
@@ -87,13 +83,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 			   </div>
 			</div>
 		</div>
-        </div>
 
 		</div>
 
-	<div class="row" id="pole-photo-row-2">
+		<div class="pole-team-photo-row">
 
-		<div class="col" id="pole-photo-row-2-col-1">
 		<div class="pole-team-photo-card">
 		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/J.png" alt="add">
 			<div class="pole-team-photo-hover">
@@ -104,9 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			   </div>
 			</div>
 		</div>
-        </div>
 
-		<div class="col" id="pole-photo-row-2-col-2">
 		<div class="pole-team-photo-card">
 		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/alex.png" alt="add">
 			<div class="pole-team-photo-hover">
@@ -117,10 +109,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			   </div>
 			</div>
 		</div>
-		</div>
 
 
-		<div class="col" id="pole-photo-row-2-col-3">
 		<div class="pole-team-photo-card">
 		<img class="pole-team-photo" src="<?php echo get_template_directory_uri(); ?>/img/yellow.png" alt="add">
 			<div class="pole-team-photo-hover">
@@ -130,7 +120,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<p class="pole-team-photo-email">ester@lepole.be</p>
 			   </div>
 			</div>
-		</div>
 		</div>
 
 		</div>
@@ -143,13 +132,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="row" id="pole-actu-row">
 
-<div class= "col" id="pole-actu-col-1">
+<div class= "col" style="width: 28.276rem;
+    flex: 0 0 28.276rem;max-width: 28.276rem;height: 27.125rem;" id="pole-actu-col-1">
 	<div id="pole-actu-title-btn">
        <h2 id="pole-actu-title">Actualités</h2>
        <a href="">
        <button id="pole-fb-btn">
-	   Itinéraire
-           <img id="pole-fb" src="<?php echo get_template_directory_uri(); ?>/img/marker-map.svg" alt="fb">
+	   Suivez-nous
+           <img id="pole-fb" src="<?php echo get_template_directory_uri(); ?>/img/f.svg" alt="fb">
        </button>
        </a>
 	</div>
@@ -159,7 +149,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 </div>
 
-<div class="col" id="pole-actu-cards-container-1">
+<div class="col" id="pole-actu-cards-container">
 	<div class="pole-actu-card">
 
 		<div class="pole-actu-card-top">
@@ -176,9 +166,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 au Pôle pour leurs portes ouvertes ! … </p>
 		</div>
 	</div>
-</div>
 
-<div class="col" id="pole-actu-cards-container-2">
+
 	<div class="pole-actu-card">
 
 		<div class="pole-actu-card-top">
@@ -195,9 +184,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 dédié aux jeux vidéo, Wild bishop, installé au Pôle ! …</p>
 		</div>
 	</div>
-</div>
 
-<div class="col" id="pole-actu-cards-container-3">
+
 	<div class="pole-actu-card">
 
 		<div class="pole-actu-card-top">
@@ -227,8 +215,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div id="pole-desk-title-container">
 	<p id="pole-desk-subtitle">Vous êtes intéressés par</p>
-	<h1 id="pole-desk-title">Un bureau, une location ponctuelle d'un de nos espaces
-		ou un moyen de production?</h1>
+	<h1 id="pole-desk-title">Un <span style="color: #FFC33B">bureau</span>, une <span style="color: #FFC33B">location ponctuelle</span> d'un de nos espaces
+		ou un moyen de <span style="color: #FFC33B">production</span>?</h1>
 </div>
 
 <div id ="pole-desk-circle-up">
@@ -237,6 +225,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div>
 
 </div>
+
+<div id="test-svg">booh</div>
 
 <?php
 get_footer();
